@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homem Aranha 2</title>
+</head>
+<body>
+        <header>
+            <a href="#" class="logo">
+                <img src="./src/imagens/pngwing.com.png" alt="">
+            </a>
+            <div class="toggle">
+                <img src="./src/imagens/toggle.png" alt="">
+            </div>
+        </header>
+        <div class="banner">
+            <div class="content">
+                <h2>Homem aranha 2</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, debitis natus. Repellendus odit numquam dignissimos iure recusandae adipisci qui corrupti, quis voluptatem deleniti cum dicta! Et odit dignissimos nemo saepe?</p>
+                <a onclick="toggle();" href="#" class="play"><img src="./src/imagens/play.png" alt="">Veja o trailer</a>
+                <div class="slide">
+                    <ul class="lista">
+                        <li>
+                            <a href="#"><img src="./src/imagens/facebook.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./src/imagens/twitter.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./src/imagens/instagram.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="trailer">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/1UAzz8ncM68?si=m98rcJ0X-9STgVZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <img onclick="toggle();" class="close" src="./src/imagens/close.png" alt="">
+            </div>
+    
+        </div>
+    
+        <script type="text/javascript">
+            function toggle(){
+                var trailer = document.querySelector('.trailer');
+                trailer.classList.toggle('active');
+            }
+        </script>
+    
+    
+        
+    
+</body>
+</html>
